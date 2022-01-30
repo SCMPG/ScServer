@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Dlls\1.33\Comms.dll" />
+    <None Remove="Dlls\1.33\Engine.dll" />
+    <None Remove="Dlls\1.33\EntitySystem.dll" />
+    <None Remove="Dlls\1.33\Survivalcraft.exe" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Dlls\1.33\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Comms">
+      <HintPath>Dlls\1.33\Comms.dll</HintPath>
+    </Reference>
+    <Reference Include="Engine">
+      <HintPath>Dlls\1.33\Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenTK">
+      <HintPath>..\..\..\..\..\..\Game\OpenTK.dll</HintPath>
+    </Reference>
+    <Reference Include="Survivalcraft">
+      <HintPath>..\..\..\..\..\..\Game\Survivalcraft.exe</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
