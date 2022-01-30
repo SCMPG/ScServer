@@ -12,7 +12,7 @@ namespace SCMPG.Object
         public string DirectoryName = string.Empty;
 
         public long Size;
-        public DateTime LastSaveTime=new DateTime();
+        public DateTime LastSaveTime= new DateTime();
         public string SerializationVersion = string.Empty;
 
         private class Serializer : ISerializer<SWorldInfo>
